@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openrcs"
+version = "0.1.0"
+description = "Independent, open-source inspector for Autodesk ReCap RCS/RCP files"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+
+[project.scripts]
+openrcs = "openrcs.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
